@@ -1,5 +1,5 @@
-# TestGame
-TestGame
+# JavaGame
+JavaGame
 
 3Dimensional videogame,from the scratch, written in java!
 Based on the publicly available and free videoseries of The Cherno!
