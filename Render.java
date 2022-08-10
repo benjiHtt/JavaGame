@@ -16,10 +16,17 @@ public class Render {
 		for (int y = 0; y < render.height; y++) {
 
 			int yPix = y + yOffset;
-			for (int x = 0; x < render.height; x++) {
+			if (yPix < 0 || yPix >= 600) {
+				continue;
+			}
+
+			for (int x = 0; x < render.width; x++) {
 
 				int xPix = x + xOffset;
 
+				if (xPix < 0 || xPix >= 800) {
+					continue;
+				}
 				pixels[xPix + yPix * width] = render.pixels[x + y * render.width];
 			}
 		}
